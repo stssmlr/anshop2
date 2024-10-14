@@ -1,0 +1,21 @@
+form {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> f8de1d4221b2a5bebf4e2ba9c4b0cfad19fbde14
+.row {
+    display: flex;
+    gap: 14px;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> f8de1d4221b2a5bebf4e2ba9c4b0cfad19fbde14
+.row>* {
+    flex-grow: 1;
+}
