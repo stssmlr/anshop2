@@ -1,20 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-<<<<<<< HEAD
-import { ProductDto, ProductsResponse } from '../models/product';
-=======
 import { CategoryModel, CreateProductModel, EditProductModel, ProductDto, ProductsResponse } from '../models/product';
->>>>>>> f8de1d4221b2a5bebf4e2ba9c4b0cfad19fbde14
 import { HttpClient } from '@angular/common/http';
 
 const fakeApi = "https://dummyjson.com/products";
 const myApi = "https://localhost:7198/api/";
-<<<<<<< HEAD
-const api = "https://dummyjson.com/";
-=======
 const azureApi = "https://shop-pd212.azurewebsites.net/api/";
 const api = "https://localhost:7198/api/";
->>>>>>> f8de1d4221b2a5bebf4e2ba9c4b0cfad19fbde14
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +18,7 @@ export class ProductsService {
   constructor(private httpClient: HttpClient) { }
 
   getAll(): Observable<ProductDto[]> {
-    return this.httpClient.get<ProductDto[]>(this.controller);
+    return this.httpClient.get<ProductDto[]>(this.controller + "all");
   }
 
   getCategories(): Observable<CategoryModel[]> {

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import { Component } from '@angular/core';
-=======
 import { Component, OnInit } from '@angular/core';
->>>>>>> f8de1d4221b2a5bebf4e2ba9c4b0cfad19fbde14
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
@@ -10,14 +6,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
-<<<<<<< HEAD
-=======
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ProductsService } from '../services/products.service';
 import { CategoryModel, CreateProductModel, EditProductModel, ProductDto } from '../models/product';
 import { ActivatedRoute } from '@angular/router';
 
->>>>>>> f8de1d4221b2a5bebf4e2ba9c4b0cfad19fbde14
 @Component({
   selector: 'app-product-form',
   standalone: true,
@@ -33,12 +26,6 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './product-form.component.html',
   styleUrl: './product-form.component.css'
 })
-<<<<<<< HEAD
-export class ProductFormComponent {
-  form: FormGroup;
-  constructor(private fb: FormBuilder) {
-    this.form = fb.group({
-=======
 export class ProductFormComponent implements OnInit {
 
   product: ProductDto | null = null;
@@ -54,22 +41,11 @@ export class ProductFormComponent implements OnInit {
   ) {
     this.form = fb.group({
       id: [0],
->>>>>>> f8de1d4221b2a5bebf4e2ba9c4b0cfad19fbde14
       name: ['', Validators.required],
       price: [0, Validators.required],
       imageUrl: ['', Validators.required],
       discount: [0, [Validators.min(0), Validators.max(100)]],
       quantity: [0, [Validators.required, Validators.min(0)]],
-<<<<<<< HEAD
-      description: ['', Validators.maxLength(2000)],
-      categoryId: [0, Validators.required]
-    });
-  }
-  submit() {
-    console.log(this.form.value);
-  }
-}
-=======
       description: [null, Validators.maxLength(2000)],
       categoryId: [0, Validators.required]
     });
@@ -133,4 +109,3 @@ export class ProductFormComponent implements OnInit {
     }
   }
 }
->>>>>>> f8de1d4221b2a5bebf4e2ba9c4b0cfad19fbde14

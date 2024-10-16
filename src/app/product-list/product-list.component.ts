@@ -1,10 +1,6 @@
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-<<<<<<< HEAD
-import { ApiProduct, ProductDto, ProductsResponse } from '../models/product';
-=======
 import { ProductDto } from '../models/product';
->>>>>>> f8de1d4221b2a5bebf4e2ba9c4b0cfad19fbde14
 import { ProductsService } from '../services/products.service';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -12,10 +8,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ConfirmDialogComponent } from '../confirm-dialog/confirm-dialog.component';
-<<<<<<< HEAD
-=======
 import { RouterLink } from '@angular/router';
->>>>>>> f8de1d4221b2a5bebf4e2ba9c4b0cfad19fbde14
 
 export interface DialogData {
   productName: string;
@@ -81,9 +74,4 @@ export class ProductListComponent implements AfterViewInit {
       verticalPosition: "top",
     });
   }
-<<<<<<< HEAD
 }
-
-=======
-}
->>>>>>> f8de1d4221b2a5bebf4e2ba9c4b0cfad19fbde14

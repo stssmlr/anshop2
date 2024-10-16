@@ -1,3 +1,7 @@
 .spacer {
     flex: 1 1 auto;
 }
+
+body{
+    color:yellow; font-family: Georgia, 'Times New Roman', Times, serif;
+}

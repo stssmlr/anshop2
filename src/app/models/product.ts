@@ -24,25 +24,16 @@ export interface ProductDto {
     categoryName?: string;
     archived: boolean;
 }
-<<<<<<< HEAD
-export interface CreateProductModel {
-    name: string;
-    imageUrl: string;
-    description?: string;
-=======
 
 export interface CreateProductModel {
     name: string;
     imageUrl: string;
     description: string | null;
->>>>>>> f8de1d4221b2a5bebf4e2ba9c4b0cfad19fbde14
     price: number;
     discount: number;
     quantity: number;
     categoryId: number;
     archived: boolean;
-<<<<<<< HEAD
-=======
 }
 
 export interface EditProductModel {
@@ -60,5 +51,4 @@ export interface EditProductModel {
 export interface CategoryModel {
     id: number;
     name: string;
->>>>>>> f8de1d4221b2a5bebf4e2ba9c4b0cfad19fbde14
 }
